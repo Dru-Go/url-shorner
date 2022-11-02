@@ -1,6 +1,6 @@
 
 import 'jest'
-import * as request from 'supertest'
+import request from 'supertest'
 // import { app } from '../src/index'
 
 describe('Jest Tests', () => {
@@ -10,9 +10,9 @@ describe('Jest Tests', () => {
 })
 
 describe('GET /', () => {
-  xit('respond with json', (done) => {
+  it('respond with json', (done) => {
     // request(app)
-    request('localhost:8000')
+    request('localhost:8001')
       .get('/')
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
